@@ -25,21 +25,17 @@ git clone https://github.com/electron/electron-quick-start
 cd electron-quick-start
 # Install dependencies
 npm install
-# Run the app
-npm start
-```
+# Package the app
+npm run package
+# Make asar file of app
+npm run build
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+Go to MyApp-darwin-x64 and double click Myapp to run it.
 
-## Resources for Learning Electron
+If want to see its content right click on Myapp and click show package contents 
+then Contents/Resources/app to see the code
 
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
+Can see app.asar in that folder too
 
-## License
+If we delete app folder too then also app will work
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
